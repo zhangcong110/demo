@@ -24,8 +24,7 @@ class Homepage extends CI_Controller
         }else{
             $data['nav']= $this->Userope->isNavShow($id);
         }
-
-
+        return false;
 
 
         $this->load->view('admin/index',$data);
